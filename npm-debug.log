@@ -2,22 +2,36 @@
 1 verbose cli [ '/opt/node/bin/node', '/usr/local/bin/npm', 'start' ]
 2 info using npm@2.14.7
 3 info using node@v4.2.3
-4 verbose stack Error: missing script: start
-4 verbose stack     at run (/opt/node/lib/node_modules/npm/lib/run-script.js:142:19)
-4 verbose stack     at /opt/node/lib/node_modules/npm/lib/run-script.js:58:5
-4 verbose stack     at /opt/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
-4 verbose stack     at checkBinReferences_ (/opt/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
-4 verbose stack     at final (/opt/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
-4 verbose stack     at then (/opt/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
-4 verbose stack     at /opt/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:300:12
-4 verbose stack     at /opt/node/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-5 verbose cwd /home/ahmad/Documents/node-android
-6 error Linux 3.19.0-56-generic
-7 error argv "/opt/node/bin/node" "/usr/local/bin/npm" "start"
-8 error node v4.2.3
-9 error npm  v2.14.7
-10 error missing script: start
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart node-android@0.0.1
+6 info start node-android@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 info node-android@0.0.1 Failed to exec start script
+9 verbose stack Error: node-android@0.0.1 start: `pm2 startOrReload ecosystem.json`
+9 verbose stack spawn ENOENT
+9 verbose stack     at ChildProcess.<anonymous> (/opt/node/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:818:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid node-android@0.0.1
+11 verbose cwd /home/ahmad/Documents/node-android
+12 error Linux 3.19.0-56-generic
+13 error argv "/opt/node/bin/node" "/usr/local/bin/npm" "start"
+14 error node v4.2.3
+15 error npm  v2.14.7
+16 error file sh
+17 error code ELIFECYCLE
+18 error errno ENOENT
+19 error syscall spawn
+20 error node-android@0.0.1 start: `pm2 startOrReload ecosystem.json`
+20 error spawn ENOENT
+21 error Failed at the node-android@0.0.1 start script 'pm2 startOrReload ecosystem.json'.
+21 error This is most likely a problem with the node-android package,
+21 error not with npm itself.
+21 error Tell the author that this fails on your system:
+21 error     pm2 startOrReload ecosystem.json
+21 error You can get their info via:
+21 error     npm owner ls node-android
+21 error There is likely additional logging output above.
+22 verbose exit [ 1, true ]
