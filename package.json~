@@ -14,7 +14,8 @@
   "description": "api for blood bank",
   "devDependencies": {},
   "scripts": {
-    "start": "pm2 startOrReload ecosystem.json"
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
 
   },
   "repository": {

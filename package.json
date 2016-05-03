@@ -1,6 +1,6 @@
 {
   "name": "node-android",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "main": "app.js",
   "dependencies": {
     "express": "~4.0.0",
@@ -14,7 +14,7 @@
   "description": "api for blood bank",
   "devDependencies": {},
   "scripts": {
-    "start": "pm2 startOrReload ecosystem.json"
+    "start": "node app.js"
 
   },
   "repository": {
