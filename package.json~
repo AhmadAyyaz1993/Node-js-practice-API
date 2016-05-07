@@ -14,7 +14,7 @@
   "description": "api for blood bank",
   "devDependencies": {},
   "scripts": {
-    "start": "npm start"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
