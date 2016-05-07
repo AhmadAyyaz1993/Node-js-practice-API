@@ -3,10 +3,10 @@
   "version": "0.0.3",
   "main": "app.js",
   "dependencies": {
-    "express": "*",
+    "express": "~4.0.0",
     "mongoose": "~3.8.8",
     "csprng": "~0.1.1",
-    "connect": "*",
+    "connect": "~2.14.4",
     "nodemailer": "~0.6.3",
     "crypto": "~0.0.3",
     "gravatar": "~1.0.6"
@@ -14,7 +14,7 @@
   "description": "api for blood bank",
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
