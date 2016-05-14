@@ -1,6 +1,6 @@
 {
   "name": "node-android",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "app.js",
   "dependencies": {
     "connect": "~2.14.4",
