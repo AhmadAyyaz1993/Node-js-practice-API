@@ -3,7 +3,6 @@
  */
 var express  = require('express');
 var connect = require('connect');
-var mongoose = require('mongoose');
 var app      = express();
 var port     = process.env.PORT || 8080;
 // Configuration
@@ -14,7 +13,7 @@ app.use(connect.urlencoded());
 // Routes
 
 require('./routes/routes.js')(app);
-mongoose.connect('mongodb://localhost:27017/node-android');
+
 app.listen(port);
 
 console.log('The App runs on port ' + port);

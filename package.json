@@ -3,14 +3,14 @@
   "version": "0.0.3",
   "main": "app.js",
   "dependencies": {
-    "express": "~4.0.0",
-    "mongoose": "~3.8.8",
-    "csprng": "~0.1.1",
     "connect": "~2.14.4",
-    "nodemailer": "~0.6.3",
     "crypto": "~0.0.3",
+    "csprng": "~0.1.1",
+    "express": "~4.0.0",
     "gravatar": "~1.0.6",
-    "mongodb": "~2.0"
+    "mongodb": "^2.0.55",
+    "mongoose": "~3.8.8",
+    "nodemailer": "~0.6.3"
   },
   "description": "api for blood bank",
   "devDependencies": {},
