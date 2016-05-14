@@ -1,6 +1,7 @@
 /**
  * Module dependencies.
  */
+var mongoose = require('mongoose');
 var express  = require('express');
 var connect = require('connect');
 var app      = express();
@@ -10,6 +11,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(connect.logger('dev'));
 app.use(connect.json()); 
 app.use(connect.urlencoded());
+mongoose.connect('mongodb://ahmad1993:Pakistan123@ds023052.mongolab.com:023052/node-android');
 // Routes
 
 require('./routes/routes.js')(app);
