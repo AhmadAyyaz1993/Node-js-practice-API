@@ -47,11 +47,10 @@ module.exports = function(app) {
           var phonenum = req.body.phonenum;
           var city = req.body.city;
           var country = req.body.country;
-
-
+          var username = req.body.username;
           console.log(req.body);
           console.log(password);
-          register.register(email,password,bloodgroup,phonenum,city,country,function (found) {
+          register.register(email,password,bloodgroup,phonenum,city,country,username,function (found) {
                console.log(found);
                res.json(found);
      });
